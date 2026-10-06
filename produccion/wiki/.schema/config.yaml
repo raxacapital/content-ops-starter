@@ -1,0 +1,105 @@
+# Wiki de producción Teprih — Esquema completo
+# Cubre toda la operación de producción académica.
+
+wiki:
+  nombre: "Producción Teprih"
+  descripcion: "Base de conocimiento incremental para toda la producción académica"
+  version: 2
+
+categorias:
+  proyecto:
+    descripcion: "Un proyecto de producción académica (un documento para un cliente)"
+    nombrado: "proyecto-{cliente}-{documento}.md"
+    campos:
+      - cliente
+      - universidad
+      - programa
+      - tipo_documento
+      - fase_actual
+      - modo  # PRODUCCIÓN o ACOMPAÑAMIENTO
+      - taxonomia  # Hurtado o Sampieri
+      - norma_citas  # APA 7 o Vancouver
+      - perfil_validador
+      - fecha_inicio
+      - ultima_entrega
+      - estado  # activo, pausado, entregado, archivado
+
+  normativa:
+    descripcion: "Normativa institucional de una universidad"
+    nombrado: "normativa-{universidad}.md"
+    campos:
+      - universidad
+      - perfil_validador
+      - norma_citas
+      - exigencias_principales
+
+  metodologia:
+    descripcion: "Concepto metodológico del sistema Teprih"
+    nombrado: "metodologia-{tema}.md"
+    campos:
+      - autor_referente  # Hurtado, Sampieri, Bunge, Barriga, Copi, Eco
+      - fase_principal  # en qué fase se usa más
+      - skills_asociadas
+
+  fase:
+    descripcion: "Referencia rápida de una fase Teprih"
+    nombrado: "fase-{codigo}.md"
+    campos:
+      - codigo  # F0, F1, F2...
+      - nombre
+      - skills
+      - validadores
+      - compuerta
+
+  skill:
+    descripcion: "Referencia de una skill del sistema"
+    nombrado: "skill-{nombre}.md"
+    campos:
+      - nombre_completo
+      - fase_principal
+      - responsable  # Clío, Ada, Norma, Vera, orquestador
+      - tipo  # inferencial, compositiva, de formato, ética
+
+  validador:
+    descripcion: "Herramienta de validación automática"
+    nombrado: "validador-{nombre}.md"
+    campos:
+      - comando
+      - fases
+      - bloquea_compuerta
+      - requisitos  # red, Pandoc, LanguageTool
+
+  cliente:
+    descripcion: "Perfil de un cliente recurrente"
+    nombrado: "cliente-{nombre}.md"
+    campos:
+      - nombre
+      - universidad
+      - programa
+      - proyectos_activos
+      - historial
+
+  leccion:
+    descripcion: "Lección aprendida durante la producción"
+    nombrado: "leccion-{tema-corto}.md"
+    campos:
+      - origen
+      - fase
+      - fecha
+
+  recurso:
+    descripcion: "Recurso de referencia externo"
+    nombrado: "recurso-{nombre}.md"
+    campos:
+      - tipo  # plugin, conector, plantilla, fuente
+      - url
+
+reglas:
+  - "Cada página tiene exactamente una categoría."
+  - "Los nombres de archivo usan kebab-case."
+  - "index.md y log.md son archivos especiales que no se editan a mano."
+  - "Los enlaces internos usan [[nombre-de-archivo]] (Obsidian)."
+  - "Nunca se borra una página: se marca estado: archivado."
+  - "Cada ingesta añade una entrada al log.md."
+  - "Las páginas de proyecto se actualizan al cerrar cada fase."
+  - "Las lecciones se crean en el momento, no se acumulan para después."
