@@ -1,0 +1,5 @@
+# Documentos fuente del cliente (privados, no van al repo)
+raw/*.docx
+raw/*.pdf
+raw/*.xlsx
+raw/*.zip

@@ -1,0 +1,135 @@
+# Wiki de producción Teprih — Esquema
+# Este archivo define las categorías de páginas y las reglas del wiki.
+
+wiki:
+  nombre: "Producción Teprih"
+  descripcion: "Base de conocimiento incremental para la producción académica"
+  version: 1
+
+categorias:
+  proyecto:
+    descripcion: "Un proyecto de producción académica (un documento para un cliente)"
+    campos:
+      - cliente
+      - universidad
+      - programa
+      - tipo_documento
+      - fase_actual
+      - modo  # PRODUCCIÓN o ACOMPAÑAMIENTO
+      - taxonomia  # Hurtado o Sampieri
+      - norma_citas  # APA 7 o Vancouver
+      - fecha_inicio
+      - ultima_entrega
+    plantilla: |
+      # {cliente} — {tipo_documento}
+
+      | Campo | Valor |
+      |---|---|
+      | Universidad | {universidad} |
+      | Programa | {programa} |
+      | Modo | {modo} |
+      | Taxonomía | {taxonomia} |
+      | Norma de citas | {norma_citas} |
+      | Fase actual | {fase_actual} |
+
+      ## Decisiones clave
+      <!-- Decisiones de F0 y F1 que rigen todo el proyecto -->
+
+      ## Observaciones del asesor
+      <!-- Historial de observaciones por entrega -->
+
+      ## Retrocesos
+      <!-- Retrocesos anotados con fase origen y destino -->
+
+  normativa:
+    descripcion: "Normativa institucional de una universidad"
+    campos:
+      - universidad
+      - perfil_validador
+      - exigencias_principales
+    plantilla: |
+      # Normativa — {universidad}
+
+      **Perfil:** `{perfil_validador}`
+
+      ## Exigencias principales
+
+      ## Particularidades
+      <!-- Lo que esta normativa exige distinto a las demás -->
+
+  metodologia:
+    descripcion: "Nota metodológica reutilizable"
+    campos:
+      - tema
+      - aplicable_a  # tipos de investigación donde aplica
+    plantilla: |
+      # {tema}
+
+      ## Cuándo aplica
+
+      ## Procedimiento
+
+      ## Errores frecuentes
+
+  leccion:
+    descripcion: "Lección aprendida durante la producción"
+    campos:
+      - origen  # de qué proyecto o fase surgió
+      - fase
+      - fecha
+    plantilla: |
+      # {titulo}
+
+      **Origen:** {origen} · **Fase:** {fase} · **Fecha:** {fecha}
+
+      ## Contexto
+
+      ## Lección
+
+      ## Acción preventiva
+
+  recurso:
+    descripcion: "Recurso de referencia (fuente, herramienta, plantilla)"
+    campos:
+      - tipo  # fuente, herramienta, plantilla
+      - url
+    plantilla: |
+      # {titulo}
+
+      **Tipo:** {tipo}
+
+      ## Descripción
+
+      ## Uso en producción
+
+reglas:
+  - "Cada página tiene exactamente una categoría."
+  - "Los nombres de archivo usan kebab-case: universidad-funiber.md, proyecto-julio-avance2.md."
+  - "index.md y log.md son archivos especiales que no se editan a mano."
+  - "Los enlaces internos usan la sintaxis [[nombre-de-archivo]] de Obsidian."
+  - "Nunca se borra una página: se marca como archivada con `estado: archivado` en el frontmatter."
+  - "Cada ingesta añade una entrada al log.md."
+  - "Las páginas de proyecto se actualizan al cerrar cada fase, no en cada conversación."
+
+operaciones:
+  ingest:
+    descripcion: "Procesar un documento fuente y actualizar/crear páginas del wiki"
+    pasos:
+      - "Leer el documento fuente de raw/."
+      - "Identificar qué páginas del wiki toca (proyecto, normativa, lección)."
+      - "Actualizar las páginas existentes o crear nuevas."
+      - "Actualizar index.md."
+      - "Añadir entrada a log.md."
+  query:
+    descripcion: "Consultar el wiki para responder una pregunta"
+    pasos:
+      - "Leer index.md para ubicar las páginas relevantes."
+      - "Leer las páginas identificadas."
+      - "Responder con base en el contenido del wiki."
+  lint:
+    descripcion: "Revisar la salud del wiki"
+    pasos:
+      - "Verificar que cada página tiene frontmatter completo."
+      - "Verificar que no hay enlaces rotos."
+      - "Verificar que index.md está al día."
+      - "Reportar páginas desactualizadas (más de 30 días sin cambio en proyecto activo)."
