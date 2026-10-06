@@ -13,10 +13,9 @@ tipo: log
 - **Wiki creado.** Estructura inicial con esquema v1.
 - **Ingesta:** Proyecto Julio — Avance 2 (T6) FUNIBER. Diagnóstico: 16 observaciones (67% formales, 33% de fondo).
 - **Ingesta:** Normativa FUNIBER. Perfiles de validación registrados.
-- **Expansión a wiki completo (esquema v2).** 22 páginas:
-  - 2 normativas: FUNIBER, Unitec
-  - 7 fases: F0–F6 con skills, compuertas y flujos
-  - 5 metodologías: Taxonomía, Bunge, Barriga, Copi, Eco
-  - 5 validadores: texto, citas, corpus, plantilla, referencias
-  - 3 recursos: agentes, plugins, modos de operación
-  - 1 proyecto activo: Julio
+- **Expansión a wiki completo (esquema v2).** 22 páginas: fases, metodologías, validadores, recursos.
+- **Ingesta de fuente:** Bunge, M. (2013). *La ciencia. Su método y su filosofía.* Editorial Laetoli. 198.362 caracteres. Libro completo leído desde Google Drive.
+- **Paquete Bunge creado.** 9 archivos:
+  - 5 mejoras a skills existentes: inf-bunge (niveles de ley), inf-copi (salto ley 2→3), comp-bunge (junturas sistémicas), 00-sistema (régimen definicional-formal), estilistica (precisión conceptual).
+  - 4 skills nuevas: inf-bunge-leyes (clasificador de niveles), inf-verificabilidad (auditor de verificabilidad), comp-sistematica (auditor de sistematicidad), inf-pseudociencia (filtro de pseudociencia).
+  - 1 resumen de integración para skill-creator.

@@ -1,7 +1,7 @@
 ---
 tipo: indice
 actualizado: 2026-10-06
-total_paginas: 22
+total_paginas: 31
 ---
 
 # Índice del Wiki de Producción Teprih
@@ -64,11 +64,40 @@ total_paginas: 22
 | Plugins externos | [[recurso-plugins]] |
 | Modos de operación | [[recurso-modos]] |
 
+## Paquete Bunge — Mejoras y skills nuevas
+
+> Basado en: Bunge, M. (2013). *La ciencia. Su método y su filosofía.*
+
+### Mejoras a skills existentes
+
+| Skill | Mejora | Archivo |
+|---|---|---|
+| `teprih-inf-bunge` | Niveles de ley (1/2/3/4) en ficha epistémica | [[skills-bunge/mejora-inf-bunge]] |
+| `teprih-inf-copi` | Regla de salto ley 2 → ley 3 | [[skills-bunge/mejora-inf-copi]] |
+| `teprih-comp-bunge` | Junturas sistémicas | [[skills-bunge/mejora-comp-bunge]] |
+| `teprih-00-sistema` | Tercer régimen definicional-formal | [[skills-bunge/mejora-00-sistema]] |
+| `teprih-estilistica` | Precisión conceptual y términos no definidos | [[skills-bunge/mejora-estilistica]] |
+
+### Skills nuevas
+
+| Skill | Fase | Qué hace | Archivo |
+|---|---|---|---|
+| `teprih-inf-bunge-leyes` | F1, F3 | Clasifica proposiciones en 4 niveles de ley | [[skills-bunge/skill-inf-bunge-leyes]] |
+| `teprih-inf-verificabilidad` | F1, F3 | Audita que las hipótesis sean verificables | [[skills-bunge/skill-inf-verificabilidad]] |
+| `teprih-comp-sistematica` | F2 | Audita sistematicidad del marco teórico | [[skills-bunge/skill-comp-sistematica]] |
+| `teprih-inf-pseudociencia` | F3 | Filtra argumentos pseudocientíficos | [[skills-bunge/skill-inf-pseudociencia]] |
+
+### Resumen de integración
+
+| Archivo |
+|---|
+| [[skills-bunge/RESUMEN-PARA-SKILL-CREATOR]] |
+
 ## Lecciones aprendidas
 
 _Sin lecciones registradas aún._
 
 ---
 
-**Estadísticas:** 22 páginas · 1 proyecto · 2 normativas · 7 fases · 5 metodologías · 5 validadores · 3 recursos
+**Estadísticas:** 31 páginas · 1 proyecto · 2 normativas · 7 fases · 5 metodologías · 5 validadores · 3 recursos · 5 mejoras · 4 skills nuevas
 **Última actualización:** 2026-10-06
