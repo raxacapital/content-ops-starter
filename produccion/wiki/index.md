@@ -1,7 +1,7 @@
 ---
 tipo: indice
 actualizado: 2026-10-06
-total_paginas: 31
+total_paginas: 39
 ---
 
 # Índice del Wiki de Producción Teprih
@@ -93,11 +93,38 @@ total_paginas: 31
 |---|
 | [[skills-bunge/RESUMEN-PARA-SKILL-CREATOR]] |
 
+## Paquete Copi — Mejoras y skills nuevas
+
+> Basado en: Copi, I. (2014). *Introducción a la lógica.*
+
+### Mejoras a skills existentes
+
+| Skill | Mejora | Archivo |
+|---|---|---|
+| `teprih-inf-copi` | Métodos de Mill + reglas silogísticas | [[skills-copi/mejora-inf-copi]] |
+| `teprih-comp-copi` | Catálogo de 14 falacias en 3 familias | [[skills-copi/mejora-comp-copi]] |
+| `teprih-estilistica` | Detección de ambigüedad + reglas de definición | [[skills-copi/mejora-estilistica]] |
+
+### Skills nuevas
+
+| Skill | Fase | Qué hace | Archivo |
+|---|---|---|---|
+| `teprih-inf-falacias` | F2, F3 | Escaneo sistemático de falacias en todo el documento | [[skills-copi/skill-inf-falacias]] |
+| `teprih-inf-definiciones` | F1, F2 | Audita definiciones contra las 5 reglas de Copi | [[skills-copi/skill-inf-definiciones]] |
+| `teprih-inf-estructura-argumental` | F2, F3 | Reconstruye y evalúa la estructura lógica de argumentos | [[skills-copi/skill-inf-estructura-argumental]] |
+| `teprih-inf-causal-mill` | F1, F3 | Audita afirmaciones causales con los 5 métodos de Mill | [[skills-copi/skill-inf-causal-mill]] |
+
+### Resumen de integración
+
+| Archivo |
+|---|
+| [[skills-copi/RESUMEN-PARA-SKILL-CREATOR]] |
+
 ## Lecciones aprendidas
 
 _Sin lecciones registradas aún._
 
 ---
 
-**Estadísticas:** 31 páginas · 1 proyecto · 2 normativas · 7 fases · 5 metodologías · 5 validadores · 3 recursos · 5 mejoras · 4 skills nuevas
+**Estadísticas:** 39 páginas · 1 proyecto · 2 normativas · 7 fases · 5 metodologías · 5 validadores · 3 recursos · 8 mejoras · 8 skills nuevas (Bunge: 5+4 / Copi: 3+4)
 **Última actualización:** 2026-10-06

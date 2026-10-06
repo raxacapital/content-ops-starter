@@ -19,3 +19,7 @@ tipo: log
   - 5 mejoras a skills existentes: inf-bunge (niveles de ley), inf-copi (salto ley 2→3), comp-bunge (junturas sistémicas), 00-sistema (régimen definicional-formal), estilistica (precisión conceptual).
   - 4 skills nuevas: inf-bunge-leyes (clasificador de niveles), inf-verificabilidad (auditor de verificabilidad), comp-sistematica (auditor de sistematicidad), inf-pseudociencia (filtro de pseudociencia).
   - 1 resumen de integración para skill-creator.
+- **Paquete Copi creado.** 8 archivos (fuente: Copi, *Introducción a la lógica*):
+  - 3 mejoras a skills existentes: inf-copi (métodos de Mill + silogismos), comp-copi (catálogo de 14 falacias en 3 familias), estilistica (detección de ambigüedad + 5 reglas de definición).
+  - 4 skills nuevas: inf-falacias (detector sistemático), inf-definiciones (auditor de definiciones), inf-estructura-argumental (analizador de estructura lógica), inf-causal-mill (auditor de razonamiento causal).
+  - 1 resumen de integración para skill-creator.
